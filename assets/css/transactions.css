@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main container para di matakpan ng sidebar */
+.main {
+  margin-left: 220px;
+  padding: 40px;
+  transition: margin-left 0.3s ease;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Page title */
+.main h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Layout container for both tables */
+.transactions-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: nowrap; /* keep them side-by-side */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Each transaction box */
+.transaction-section {
+  background-color: white;
+  border-radius: 12px;
+  padding: 25px;
+  flex: 1 1 48%;
+  min-width: 400px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+}
+
+/* Section title */
+.transaction-section h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+/* Table design */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  font-size: 15px;
+}
+
+th {
+  background-color: #4c91e0;
+  color: white;
+}
+
+tr:hover {
+  background-color: #f0f6ff;
+}
+
+/* Responsive design */
+@media (max-width: 1000px) {
+  .transactions-container {
+    flex-direction: column;
+  }
+
+  .transaction-section {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .main {
+    margin-left: 0;
+    padding: 20px;
+  }
+}

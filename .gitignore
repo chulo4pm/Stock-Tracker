@@ -1,0 +1,12 @@
+# Local config with real credentials
+config.php
+
+# User-uploaded images
+assets/uploads/*
+!assets/uploads/.gitkeep
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

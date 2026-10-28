@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f6f8;
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.add_item-container {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid gray;
+}
+
+.add_item-container h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #000000;
+  text-align: center;
+  font-weight: 500;
+}
+
+.add_item-container h1 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #000000;
+  text-align: left;
+  font-weight: 500;
+}
+
+.add_item-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.add_item-group {
+  position: relative;
+}
+
+.add_item-group input,
+.input-select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.add_item-form input:focus,
+.input-select:focus {
+  border-color: #4880c9;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(72, 128, 201, 0.2);
+}
+
+.add-btn,
+.back-btn {
+  padding: 12px 30px;
+  background-color: #4880c9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover,
+.back-btn:hover {
+  background-color: #3a6bb0;
+}

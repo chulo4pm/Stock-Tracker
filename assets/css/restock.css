@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* === RESET & GLOBAL === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+
+/* === MAIN LAYOUT === */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 60px 20px;
+  margin-left: 220px; /* Sidebar width */
+  transition: margin-left 0.3s ease;
+}
+
+/* === FORM SECTION === */
+.form-section {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* === HEADINGS === */
+h1 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 25px;
+}
+
+/* === FORM ELEMENTS === */
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+select,
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  transition: all 0.2s ease;
+}
+
+select:focus,
+input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* === BUTTON SECTION === */
+.button-container {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.save-button {
+  background-color: #4880c9;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.save-button:hover {
+  background-color: #3a6bb0;
+}
+
+.save-button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+/* === LOADING SPINNER === */
+.loading-spinner {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #007bff;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  animation: spin 1s linear infinite;
+  margin-left: 8px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* === ALERT MESSAGES === */
+.alert {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.alert.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.alert.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 950px) {
+  .main {
+    margin-left: 0;
+    padding: 40px 15px;
+  }
+
+  .form-section {
+    width: 90%;
+    padding: 25px 20px;
+  }
+
+  .save-button {
+    width: 100%;
+  }
+}
